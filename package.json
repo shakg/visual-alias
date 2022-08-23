@@ -5,6 +5,9 @@
     "main": "main.js",
     "author": "ishakg",
     "license": "MIT",
+    "scripts": {
+        "start" : "electron ."
+    },
     "devDependencies": {
         "electron": "^20.0.3"
     }
