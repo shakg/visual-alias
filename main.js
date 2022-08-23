@@ -1,3 +1,4 @@
+const { exec } = require('child_process')
 const { app, BrowserWindow, ipcMain } = require('electron')
 const path = require('path')
 
@@ -30,6 +31,14 @@ app.on('window-all-closed', () => {
 })
 
 
-ipcMain.handle('runCommand', (event, data) => {
-    console.log("running command -*-> " , data)
+ipcMain.handle('runCommand', (event, command) => {
+    console.log("running command -*-> " , command)
+    exec(command, (error, stdout, stderr) => {
+        if (error) {
+          console.error(`exec error: ${error}`);
+          return;
+        }
+        console.log(`stdout: ${stdout}`);
+        console.error(`stderr: ${stderr}`);
+    });
 })
