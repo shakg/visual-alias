@@ -6,9 +6,13 @@
     "author": "ishakg",
     "license": "MIT",
     "scripts": {
-        "start" : "electron ."
+        "start": "electron ."
     },
     "devDependencies": {
-        "electron": "^20.0.3"
+        "autoprefixer": "^10.4.8",
+        "electron": "^20.0.3",
+        "postcss": "^8.4.16",
+        "postcss-loader": "^7.0.1",
+        "tailwindcss": "^2.2.19"
     }
 }
