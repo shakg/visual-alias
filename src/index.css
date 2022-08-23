@@ -1,0 +1,12 @@
+.add-alias > a{
+    text-decoration: none;
+    color:black;
+}
+.add-alias{
+    margin:5px;
+    padding: 5px;
+}
+.aliases{
+    margin:10px;
+    padding:5px;
+}
