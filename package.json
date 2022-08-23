@@ -1,0 +1,16 @@
+{
+    "name": "visual-alias",
+    "version": "1.0.0",
+    "description": "visual linux bash aliases",
+    "main": "main.js",
+    "author": "ishakg",
+    "license": "MIT",
+    "scripts": {
+        "start": "electron ."
+    },
+    "devDependencies": {
+        "autoprefixer": "^10.4.8",
+        "electron": "^20.0.3"
+    },
+    "dependencies": {}
+}
