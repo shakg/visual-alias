@@ -1,4 +1,4 @@
-const { app, BrowserWindow } = require('electron')
+const { app, BrowserWindow, ipcMain } = require('electron')
 const path = require('path')
 
 function createWindow () {
@@ -10,7 +10,7 @@ function createWindow () {
     }
   })
 
-  win.loadFile('src/index.html')
+  win.loadFile('src/index/index.html')
 }
 
 app.whenReady().then(() => {
@@ -27,4 +27,9 @@ app.on('window-all-closed', () => {
   if (process.platform !== 'darwin') {
     app.quit()
   }
+})
+
+
+ipcMain.handle('runCommand', (event, data) => {
+    console.log("running command -*-> " , data)
 })
