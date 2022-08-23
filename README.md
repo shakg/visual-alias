@@ -1,2 +1,2 @@
 # visual-alias
-linux bash aliases but visually
+visual linux bash aliases
