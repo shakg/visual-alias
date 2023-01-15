@@ -1,5 +1,6 @@
 # Visual Alias
 Aliases made easy. Blazingly fast :) electronjs app that enables users to run & see aliases visually.
+https://www.oslash.com/ visual-alias will be a product like oslash 
 
 # Features
  - add aliases 
